@@ -1,530 +1,66 @@
-2024-09-20 09:11:00,643 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2024-09-20 09:13:19,356 [Worker-43: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
-2024-09-20 09:13:33,262 [Worker-48: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:13:33,263 [Worker-48: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 09:13:33,266 [Worker-48: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:13:33,267 [Worker-48: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 09:14:02,197 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:02,197 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 09:14:02,200 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:02,200 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 09:14:02,586 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\pom.xml.
-2024-09-20 09:14:03,217 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:03,218 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 09:14:03,219 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:03,220 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 09:14:03,834 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:03,834 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 09:14:03,839 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:03,839 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 09:14:04,242 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.parent:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\pom.xml.
-2024-09-20 09:14:04,342 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
-2024-09-20 09:14:04,453 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\pom.xml.
-2024-09-20 09:14:04,694 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.tests:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\pom.xml.
-2024-09-20 09:14:04,840 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:04,840 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 09:14:04,843 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:04,843 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 09:14:05,591 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:05,591 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 09:14:05,593 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:05,594 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 09:14:05,760 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\pom.xml.
-2024-09-20 09:14:05,778 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:05,778 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 09:14:05,781 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:05,782 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 09:14:08,280 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:08,280 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 09:14:08,282 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:08,282 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 09:14:08,390 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui.tests:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\pom.xml.
-2024-09-20 09:14:08,400 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:08,400 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
-2024-09-20 09:14:08,403 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:14:08,403 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
-2024-09-20 09:14:11,121 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.web:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\pom.xml.
-2024-09-20 09:14:12,451 [Worker-47: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:14:12,451 [Worker-47: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:14:15,361 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 09:14:15,369 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 09:14:18,575 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 09:14:18,579 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 09:14:36,080 [Worker-42: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:14:36,081 [Worker-42: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:14:36,181 [Worker-42: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:14:36,183 [Worker-42: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:14:36,284 [Worker-42: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:14:36,285 [Worker-42: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:15:11,283 [Worker-25: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:15:11,284 [Worker-25: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:15:11,393 [Worker-25: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:15:11,393 [Worker-25: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:15:11,492 [Worker-25: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:15:11,493 [Worker-25: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:15:51,756 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:51,756 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 09:15:51,759 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:51,759 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 09:15:51,797 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:51,798 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 09:15:51,799 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:51,799 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 09:15:52,746 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:52,746 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 09:15:52,749 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:52,749 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 09:15:52,874 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:52,874 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 09:15:52,875 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:52,875 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 09:15:53,354 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:53,354 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 09:15:53,356 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:53,358 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 09:15:53,368 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:53,369 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 09:15:53,370 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:53,370 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 09:15:55,014 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:55,015 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 09:15:55,016 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:55,016 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 09:15:55,029 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:55,030 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
-2024-09-20 09:15:55,031 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:15:55,032 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
-2024-09-20 09:15:56,732 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 09:15:56,738 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 09:16:21,975 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:21,975 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 09:16:21,977 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:21,977 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 09:16:22,007 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:22,008 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 09:16:22,010 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:22,010 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 09:16:22,580 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:22,580 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 09:16:22,582 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:22,583 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 09:16:22,867 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:22,867 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 09:16:22,869 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:22,870 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 09:16:23,114 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:23,114 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
-2024-09-20 09:16:23,115 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 09:16:23,115 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
-2024-09-20 09:16:23,417 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 09:16:23,422 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 09:16:28,995 [Worker-50: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:16:28,996 [Worker-50: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:16:29,092 [Worker-50: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:16:29,093 [Worker-50: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:16:29,190 [Worker-50: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 09:16:29,191 [Worker-50: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 09:43:57,679 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 09:43:57,687 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 09:44:25,195 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 09:44:25,200 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 10:30:43,534 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 10:30:43,537 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 10:32:59,029 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 10:32:59,033 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 10:38:32,584 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 10:38:32,589 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 10:38:57,158 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 10:38:57,163 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 10:40:41,894 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 10:40:41,900 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 11:45:44,391 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 11:45:44,397 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 11:45:51,272 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 11:45:51,277 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 11:46:05,950 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 11:46:05,953 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 11:47:55,116 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:55,118 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 11:47:55,122 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:55,123 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 11:47:55,218 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:55,218 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 11:47:55,221 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:55,221 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 11:47:57,479 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:57,480 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 11:47:57,483 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:57,484 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 11:47:58,028 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:58,029 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 11:47:58,031 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:47:58,031 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 11:48:01,022 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:01,022 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 11:48:01,024 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:01,024 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 11:48:01,042 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:01,042 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 11:48:01,044 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:01,045 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 11:48:06,956 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:06,957 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 11:48:06,959 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:06,959 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 11:48:06,996 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:06,996 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
-2024-09-20 11:48:07,001 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 11:48:07,002 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
-2024-09-20 11:48:10,775 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 11:48:10,839 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:18:10,071 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 13:18:10,074 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:18:53,414 [Worker-98: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 13:18:53,415 [Worker-98: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 13:18:53,469 [Worker-98: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 13:18:53,469 [Worker-98: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 13:18:53,524 [Worker-98: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 13:18:53,525 [Worker-98: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 13:21:31,558 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 13:21:31,562 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:21:50,019 [Worker-99: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 13:21:50,020 [Worker-99: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 13:21:50,074 [Worker-99: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 13:21:50,074 [Worker-99: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 13:21:50,126 [Worker-99: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 13:21:50,126 [Worker-99: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 13:29:10,896 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 13:29:10,897 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:48:40,590 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 13:48:40,592 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:49:30,681 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 13:49:30,682 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:58:14,829 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 13:58:14,833 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 13:59:34,575 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 13:59:34,578 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:00:26,512 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 14:00:26,514 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:00:29,896 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 14:00:29,899 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:01:08,490 [Worker-117: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:01:08,491 [Worker-117: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:01:08,544 [Worker-117: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:01:08,545 [Worker-117: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:01:08,601 [Worker-117: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:01:08,601 [Worker-117: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:06:16,258 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 14:06:16,262 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:06:40,609 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:06:40,615 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:07:04,902 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:07:04,902 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:07:04,993 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:07:04,994 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:07:05,079 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:07:05,079 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:07:48,893 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 14:07:48,902 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:09:45,482 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:09:45,489 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:11:46,467 [Worker-122: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.web:1.0.0-SNAPSHOT @ C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\pom.xml.
-2024-09-20 14:11:46,986 [Worker-122: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20210307/json-20210307.pom
-2024-09-20 14:11:47,061 [Worker-122: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20210307/json-20210307.pom
-2024-09-20 14:11:47,070 [Worker-122: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:11:47,070 [Worker-122: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:11:47,101 [Worker-122: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:11:47,101 [Worker-122: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:11:47,162 [Worker-122: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20210307/json-20210307.jar
-2024-09-20 14:11:47,321 [Worker-122: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20210307/json-20210307.jar
-2024-09-20 14:11:47,870 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 14:11:47,874 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:11:48,548 [Worker-120: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20210307/json-20210307-sources.jar
-2024-09-20 14:11:48,614 [Worker-120: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20210307/json-20210307-sources.jar
-2024-09-20 14:11:48,617 [Worker-120: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.json:json:20210307
-2024-09-20 14:11:51,268 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:11:51,282 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:12:12,571 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:12:12,572 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:12:12,665 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:12:12,666 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:12:12,755 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:12:12,755 [Worker-93: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:12:34,905 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src to target\classes
-2024-09-20 14:12:34,912 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:16:56,416 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:16:56,425 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:17:09,139 [Worker-120: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:17:09,140 [Worker-120: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:17:09,241 [Worker-120: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:17:09,241 [Worker-120: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:17:09,329 [Worker-120: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:17:09,330 [Worker-120: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:34:15,138 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 14:34:15,141 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:36:58,891 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 14:36:58,894 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:37:40,494 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 14:37:40,496 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:41:14,292 [Worker-135: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 14:41:14,294 [Worker-135: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:42:52,524 [Worker-136: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:42:52,542 [Worker-136: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:43:10,500 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:43:10,506 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:43:27,062 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:43:27,067 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:46:32,400 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 14:46:32,407 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 14:46:54,954 [Worker-139: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:46:54,955 [Worker-139: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:46:55,044 [Worker-139: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:46:55,045 [Worker-139: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 14:46:55,136 [Worker-139: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 14:46:55,137 [Worker-139: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 15:18:17,834 [Worker-153: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:18:17,838 [Worker-153: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:22:35,466 [Worker-162: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:22:35,475 [Worker-162: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:23:33,784 [Worker-162: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:23:33,790 [Worker-162: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:24:42,649 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:24:42,656 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:24:57,453 [Worker-147: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:24:57,460 [Worker-147: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:25:20,057 [Worker-160: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:25:20,064 [Worker-160: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:33:51,032 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 15:33:51,034 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:33:59,382 [Worker-165: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 15:33:59,385 [Worker-165: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:34:41,664 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:34:41,672 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:41:34,265 [Worker-169: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 15:41:34,267 [Worker-169: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:41:57,355 [Worker-168: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src to target\classes
-2024-09-20 15:41:57,357 [Worker-168: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:48:06,050 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:48:06,053 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:48:25,206 [Worker-172: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 15:48:25,207 [Worker-172: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 15:48:25,314 [Worker-172: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 15:48:25,315 [Worker-172: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 15:48:25,407 [Worker-172: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 15:48:25,408 [Worker-172: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 15:50:31,906 [Worker-172: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:50:31,912 [Worker-172: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:52:39,033 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 15:52:39,039 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 15:52:59,017 [Worker-170: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 15:52:59,018 [Worker-170: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 15:52:59,119 [Worker-170: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 15:52:59,120 [Worker-170: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 15:52:59,225 [Worker-170: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 15:52:59,226 [Worker-170: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 16:07:56,983 [Worker-177: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 16:07:56,984 [Worker-177: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 16:07:57,055 [Worker-177: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 16:07:57,056 [Worker-177: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 16:07:57,116 [Worker-177: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 16:07:57,117 [Worker-177: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 16:12:21,760 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 16:12:21,776 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 16:12:31,391 [Worker-182: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 16:12:31,392 [Worker-182: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 16:12:31,498 [Worker-182: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 16:12:31,499 [Worker-182: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 16:12:31,603 [Worker-182: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 16:12:31,604 [Worker-182: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 20:28:14,204 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
-2024-09-20 20:28:45,979 [Multihomed mDNS.Timer] WARN  javax.jmdns.impl.JmmDNSImpl - Unexpected unhandled exception: java.net.SocketException: Invalid argument: no further information
-2024-09-20 20:29:16,982 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:16,985 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 20:29:16,992 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:16,993 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 20:29:17,737 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:17,737 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 20:29:17,739 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:17,740 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 20:29:19,475 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:19,475 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 20:29:19,480 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:19,480 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 20:29:20,036 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:20,036 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 20:29:20,037 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:20,037 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 20:29:21,443 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:21,443 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 20:29:21,447 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:21,447 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 20:29:21,532 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:21,533 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 20:29:21,536 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:21,536 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 20:29:25,794 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:25,794 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 20:29:25,796 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:25,796 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 20:29:25,870 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:25,870 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
-2024-09-20 20:29:25,875 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:25,876 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
-2024-09-20 20:29:33,516 [Worker-31: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
-2024-09-20 20:29:33,522 [Worker-31: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 20:29:34,529 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 20:29:34,541 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 20:29:36,705 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:36,706 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
-2024-09-20 20:29:36,709 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:36,710 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
-2024-09-20 20:29:36,756 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:36,756 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
-2024-09-20 20:29:36,759 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:36,759 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
-2024-09-20 20:29:37,385 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:37,385 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
-2024-09-20 20:29:37,386 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:37,386 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
-2024-09-20 20:29:37,735 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:37,735 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
-2024-09-20 20:29:37,738 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:37,739 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
-2024-09-20 20:29:38,058 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:38,059 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
-2024-09-20 20:29:38,061 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2024-09-20 20:29:38,061 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
-2024-09-20 20:29:38,977 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 20:29:38,981 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 20:30:23,806 [Worker-34: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 20:30:23,807 [Worker-34: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 20:30:23,899 [Worker-34: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 20:30:23,899 [Worker-34: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 20:30:23,997 [Worker-34: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 20:30:23,998 [Worker-34: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 21:02:57,679 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
-2024-09-20 21:02:57,687 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\Documents\PhD\WebBasedSolution2\WebBasedSolution2\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
-2024-09-20 21:42:29,509 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2024-09-20 21:49:02,290 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 21:49:07,307 [Multihomed mDNS.Timer] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/192.168.1.64] state: canceling 1 task: null
-2024-09-20 21:50:22,415 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 21:50:27,431 [Multihomed mDNS.Timer] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/fe80:0:0:0:c49a:2dd2:ced0:f227%eth32] state: canceling 1 task: null
-2024-09-20 22:12:36,594 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Renewer(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 22:12:36,598 [SDU-134054-c-sdu-dk.local..recover()] WARN  javax.jmdns.impl.JmDNSImpl - RECOVERING
-2024-09-20 22:12:36,598 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 22:12:36,604 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Renewer(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 22:12:36,605 [SDU-134054-c-sdu-dk.local..recover()] WARN  javax.jmdns.impl.JmDNSImpl - RECOVERING
-2024-09-20 22:12:36,606 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 22:12:36,764 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Renewer(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 22:12:36,765 [SDU-134054-c-sdu-dk.local..recover()] WARN  javax.jmdns.impl.JmDNSImpl - RECOVERING
-2024-09-20 22:12:36,765 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
-java.net.NoRouteToHostException: No route to host: no further information
-	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
-	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
-	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
-	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
-	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
-	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
-	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
-	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
-	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
-	at java.base/java.util.TimerThread.run(Timer.java:516)
-2024-09-20 22:12:41,610 [SDU-134054-c-sdu-dk.local..recover()] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/fe80:0:0:0:cdfe:3d72:a120:d5ba%eth23] state: canceling 1 task: null
-2024-09-20 22:12:41,617 [SDU-134054-c-sdu-dk.local..recover()] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/172.19.48.1] state: canceling 1 task: null
-2024-09-20 22:12:41,777 [SDU-134054-c-sdu-dk.local..recover()] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/172.27.192.1] state: canceling 1 task: null
-2024-09-20 22:12:42,621 [SDU-134054-c-sdu-dk.local..recover()] WARN  javax.jmdns.impl.JmDNSImpl - SDU-134054-c-sdu-dk.local..recover() Could not recover we are Down!
-2024-09-20 22:12:42,628 [SDU-134054-c-sdu-dk.local..recover()] WARN  javax.jmdns.impl.JmDNSImpl - SDU-134054-c-sdu-dk.local..recover() Could not recover we are Down!
-2024-09-20 22:12:42,788 [SDU-134054-c-sdu-dk.local..recover()] WARN  javax.jmdns.impl.JmDNSImpl - SDU-134054-c-sdu-dk.local..recover() Could not recover we are Down!
-2024-09-20 22:15:45,950 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
-2024-09-20 22:15:45,952 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 22:15:46,285 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 22:15:46,285 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 22:15:46,344 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 22:15:46,345 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
-2024-09-20 22:15:46,399 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
-2024-09-20 22:15:46,399 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 10:13:33,857 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-21 10:15:33,790 [Worker-6: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-10-21 10:15:35,231 [Worker-6: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:15:35,231 [Worker-6: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
+2024-10-21 10:15:35,239 [Worker-6: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:15:35,239 [Worker-6: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
+2024-10-21 10:21:25,623 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:25,625 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
+2024-10-21 10:21:25,635 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:25,635 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
+2024-10-21 10:21:26,114 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\pom.xml.
+2024-10-21 10:21:26,671 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:26,671 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
+2024-10-21 10:21:26,672 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:26,673 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
+2024-10-21 10:21:27,704 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:27,704 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
+2024-10-21 10:21:27,707 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:27,707 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
+2024-10-21 10:21:28,089 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.tests:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\pom.xml.
+2024-10-21 10:21:28,104 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:28,104 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
+2024-10-21 10:21:28,106 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:28,107 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
+2024-10-21 10:21:28,817 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:28,817 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
+2024-10-21 10:21:28,820 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:28,820 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
+2024-10-21 10:21:28,960 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\pom.xml.
+2024-10-21 10:21:28,973 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:28,973 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
+2024-10-21 10:21:28,976 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:28,976 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
+2024-10-21 10:21:31,310 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:31,310 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
+2024-10-21 10:21:31,313 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:31,315 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
+2024-10-21 10:21:31,422 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui.tests:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\pom.xml.
+2024-10-21 10:21:31,431 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:31,431 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
+2024-10-21 10:21:31,432 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-21 10:21:31,432 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
+2024-10-21 10:21:34,098 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.web:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\pom.xml.
+2024-10-21 10:21:35,265 [Worker-50: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
+2024-10-21 10:21:35,265 [Worker-50: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 10:21:37,450 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
+2024-10-21 10:21:37,462 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
+2024-10-21 10:21:40,973 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
+2024-10-21 10:21:40,989 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\Github_projects\WebBasedBDD\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
+2024-10-21 10:22:29,621 [Worker-64: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
+2024-10-21 10:22:29,622 [Worker-64: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 10:22:29,718 [Worker-64: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
+2024-10-21 10:22:29,719 [Worker-64: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 10:22:29,819 [Worker-64: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
+2024-10-21 10:22:29,819 [Worker-64: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 11:06:02,880 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-21 11:07:53,614 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text/target/classes
+2024-10-21 11:07:53,620 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 11:07:53,785 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
+2024-10-21 11:07:53,786 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 11:07:53,854 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
+2024-10-21 11:07:53,855 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-21 11:07:53,915 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
+2024-10-21 11:07:53,916 [Worker-31: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-22 10:25:01,306 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-22 10:41:48,277 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

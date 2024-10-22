@@ -7,12 +7,17 @@ declarative entity robot {
 
 declarative entity gripper {
 	actions: closes, opens
-	states: closed, opened	
+	states: closed, opened	 
 }
 
 
 Scenario: "Assembling Lego"
 Given the position of the robot "Assembler" is "default"
-When the robot "Assembler" moves to position "point 2"
+When the robot "Assembler" moves to position "onneR9"
 Then the position of the robot "Assembler" is "point2"
+          
+           
+             
+          
+          
           

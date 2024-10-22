@@ -50,6 +50,13 @@ def before_scenario(context, scenario):
 def after_scenario(context, scenario):
     pass
 
+# Get coordinate-location based on configured name
+def get_position(name):
+    locations = data["Positions"]
+    coordinate = locations[name]
+
+    return coordinate
+
 # Get speed based naming (if not set, returns moderately)
 def get_speed(identifier="moderate"):
     speed = data["Speeds"][identifier]["speed"]
