@@ -22,20 +22,15 @@ def readFile():
     with open(bdd_file_path) as f:
         with open(feature_file_path, "w") as fileWriter:
             content = f.readlines()
-            disallowedStrings = ['actions', 'states', 'properties', '}', '/*', '*/', "which means", '//', 'declarative', 'imperative', 'model']
+            disallowedStrings = ['actions', 'states', 'properties', '}', '/*', '*/', '//', 'declarative', 'imperative', 'model']
+            #We write Feature keyword first
+            s = "Feature: New Test" 
+            fileWriter.write(s + '\n')
             for line in content:
                 if any(x in line for x in disallowedStrings):
                     continue
-                if line.startswith('Scenario:'):
-                    scenarioCounter += 1
-                    scenario = line.replace('"', "").replace("Scenario: ", "")
-                    s = "Feature: " + scenario
+                elif line.strip().startswith('which means'):
+                    s = '\tScenario: '
                     fileWriter.write(s + '\n')
-                elif line.startswith(('Given', 'When', 'Then')):
-                    s = '\tScenario: ' + line
-                    fileWriter.write(s)
                 else:
                     fileWriter.write(line)
-
-# Call the function
-#readFile()

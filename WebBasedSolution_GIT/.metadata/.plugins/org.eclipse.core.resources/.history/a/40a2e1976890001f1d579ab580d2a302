@@ -1,0 +1,36 @@
+model sample using robotic_domain
+
+declarative entity robot {
+	actions: moves
+	properties: position, speed
+}
+
+declarative entity gripper {
+	actions: closes, opens
+	states: closed, opened	 
+}
+
+
+Scenario: "Assembling Lego"
+Given the position of the robot "Assembler" is "default" 
+	which means 
+		Given the position of the robot "Assembler" is "D"  
+		When the robot "Assembler" moves to position "F" 
+		Then the position of the robot "Assembler" is "r2
+When the robot "Assembler" moves to position "point2" 
+Then the position of the robot "Assembler" is "point2"
+
+
+
+Scenario: "Assembling Lego2"
+Given the position of the robot "Assembler" is "D"  
+When the robot "Assembler" moves to position "F" 
+Then the position of the robot "Assembler" is "r2"
+          
+           
+             
+           
+          
+          
+          
+          
