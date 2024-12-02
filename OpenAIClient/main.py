@@ -12,6 +12,7 @@ load_dotenv()
 app = FastAPI()
 router = APIRouter()
 
+
 def get_new_message(context: list[Context], model_version, new_message, user):
     """
     Generates a response from the OpenAI API based on the provided context and new message.
@@ -47,12 +48,15 @@ def get_new_message(context: list[Context], model_version, new_message, user):
     return choice
 
     # Extract the assistant's reply
-    #assistant_reply = response['choices'][0]['message']['content'].strip()
+    # assistant_reply = response['choices'][0]['message']['content'].strip()
 
     # Append the assistant's reply to the context
-    #context.append({"role": "assistant", "content": assistant_reply})
+    # context.append({"role": "assistant", "content": assistant_reply})
+
+
 #
-    #return assistant_reply
+# return assistant_reply
+
 
 @router.post("/get_response")
 async def get_response(new_response: NewResponse):
@@ -79,6 +83,7 @@ async def get_response(new_response: NewResponse):
     print(new_gippity)
     return {"response": new_gippity}
 
+
 if __name__ == "1__main__":
     context = [
         {"role": "user", "content": "You are a helpful assistant."},
@@ -87,8 +92,9 @@ if __name__ == "1__main__":
     ]
     model_version = "gpt-3.5-turbo"
     new_message = "Who was the MVP of that series?"
-    #response = get_new_message(context, model_version, new_message)
-    #print(response)
+    # response = get_new_message(context, model_version, new_message)
+    # print(response)
+
 
 @router.get("/get_changes/{file_name}")
 async def get_changes(file_name: str):
@@ -113,10 +119,16 @@ async def set_actor(actor_name: str, actor_email: str):
     return {"message": f"Actor has been set to {actor_name}."}
 
 
+@router.get("/get_actor")
+async def get_actor():
+    return {"actor_name": tracker.actor_name, "actor_email": tracker.actor_email}
+
+
 @router.get("/get_changes")
 async def get_all_changes():
     commits = tracker.get_changes()
     return {"commits": [str(commit) for commit in commits]}
+
 
 if __name__ == "__main__":
     app.include_router(router)

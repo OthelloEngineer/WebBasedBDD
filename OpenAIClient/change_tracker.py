@@ -90,7 +90,7 @@ class ChangeTracker:
                     a_diff = change.a_blob.data_stream.read().decode('utf-8')
                     b_diff = change.b_blob.data_stream.read().decode('utf-8')
                     changes.append(
-                        FileChange(file_name=file_path, commit_sha=commit.hexsha, before=a_diff, after=b_diff))
+                        FileChange(file_name=file_path, commit_sha=commit.hexsha, before=a_diff, after=b_diff, user=commit.author.name))
                     print(f"A_DIFF:\n{a_diff}\nB_DIFF\n{b_diff}")
             prev_commit = commit
 
