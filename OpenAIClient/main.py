@@ -3,9 +3,8 @@ import openai
 import uvicorn as uvicorn
 from dotenv import load_dotenv
 from fastapi import FastAPI, APIRouter
-from openai import OpenAI
-import fastapi
 
+from change_tracker import tracker
 from data import NewResponse, Context
 
 load_dotenv()
@@ -66,7 +65,7 @@ async def get_response(new_response: NewResponse):
 				{"role": "user", "content": "Hello, who won the World Series in 2020?"},
 				{"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."}
 		],
-		"user": "assistant",
+		"user": "user",
 		"model": "o1-preview-2024-09-12"
 }
     """
@@ -90,6 +89,34 @@ if __name__ == "1__main__":
     new_message = "Who was the MVP of that series?"
     #response = get_new_message(context, model_version, new_message)
     #print(response)
+
+@router.get("/get_changes/{file_name}")
+async def get_changes(file_name: str):
+    """
+    example request:
+    {
+        "file_name": "sample.bdd"
+    }
+    """
+    return tracker.get_file_changes(file_name)
+
+
+@router.post("/track_changes")
+async def track_changes():
+    tracker.track_changes()
+    return {"message": "Changes have been tracked."}
+
+
+@router.post("/set_actor")
+async def set_actor(actor_name: str, actor_email: str):
+    tracker.set_actor(actor_name, actor_email)
+    return {"message": f"Actor has been set to {actor_name}."}
+
+
+@router.get("/get_changes")
+async def get_all_changes():
+    commits = tracker.get_changes()
+    return {"commits": [str(commit) for commit in commits]}
 
 if __name__ == "__main__":
     app.include_router(router)
