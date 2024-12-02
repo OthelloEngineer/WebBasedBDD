@@ -1,6 +1,7 @@
 import os
 import openai
 from dotenv import load_dotenv
+from openai import OpenAI
 
 load_dotenv()
 
@@ -11,31 +12,36 @@ def get_new_message(context, model_version, new_message):
 
     Parameters:
         context (list): A list of dictionaries representing the conversation history.
-        model_version (str): The model version to use (e.g., 'gpt-4', 'o1-preview').
+        model_version (str): The model version to use (e.g., 'gpt-3.5-turbo', 'gpt-4').
         new_message (str): The latest message input from the user.
 
     Returns:
         str: The generated response from the OpenAI API.
     """
 
-    openai_api_key = os.getenv("OPEN_AI_TOKEN")
-    print(openai_api_key)
-    if not openai_api_key:
+    client = OpenAI(
+        api_key=os.environ.get("OPEN_AI_TOKEN"),
+    )
+
+    if not client.api_key:
         raise ValueError("OPEN_AI_TOKEN environment variable not found.")
-    openai.api_key = openai_api_key
 
-    messages = context + [{"role": "user", "content": new_message}]
+    context.append({"role": "user", "content": new_message})
 
-    try:
-        response = openai.ChatCompletion.create(
-            model=model_version,
-            messages=messages
-        )
-        assistant_reply = response['choices'][0]['message']['content']
-        return assistant_reply.strip()
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return None
+    response = client.chat.completions.create(
+        model=model_version,
+        messages=context
+    )
+    choice = response.choices[0].message
+    print(choice)
+
+    # Extract the assistant's reply
+    #assistant_reply = response['choices'][0]['message']['content'].strip()
+
+    # Append the assistant's reply to the context
+    #context.append({"role": "assistant", "content": assistant_reply})
+#
+    #return assistant_reply
 
 
 if __name__ == "__main__":
