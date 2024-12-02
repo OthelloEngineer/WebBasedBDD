@@ -10,6 +10,7 @@ class FileChange(BaseModel):
     commit_sha: str
     before: str
     after: str
+    user: str | None = None
 
 
 class ChangeTracker:
@@ -51,13 +52,27 @@ class ChangeTracker:
 
     def get_changes(self):
         """
-        Retrieves all commits made by the specified actor.
-
-        Returns:
-            list: A list of commit objects made by the actor.
+        Retrieves all FileChanges made by the actor.
         """
-        commits = list(self.repo.iter_commits(author=self.actor_name))
-        return commits
+        commits = list(self.repo.iter_commits('--all', max_count=100, since='300.days.ago', paths=self._basedir))
+        changes = []
+        prev_commit = NULL_TREE
+        for commit in commits:
+            print(f"SHA: {commit.hexsha}")
+            author = commit.author
+            print(f"Author: {author.name} <{author.email}>: current actor: {self.actor_name} <{self.actor_email}>")
+            if author.name == self.actor_name:
+                for change in commit.diff(prev_commit):
+                    if change.a_blob is None or change.b_blob is None:
+                        continue
+                    a_diff = change.a_blob.data_stream.read().decode('utf-8')
+                    b_diff = change.b_blob.data_stream.read().decode('utf-8')
+                    changes.append(
+                        FileChange(file_name=change.a_path, commit_sha=commit.hexsha, before=a_diff,
+                                   after=b_diff, user=author.name))
+                    print(f"A_DIFF:\n{a_diff}\nB_DIFF\n{b_diff}")
+            prev_commit = commit
+        return changes
 
     def get_file_changes(self, file_path):
         path = f"{self._basedir}{file_path}"
@@ -88,6 +103,6 @@ tracker = ChangeTracker()
 
 
 if __name__ == "__main__":
+    tracker.set_actor("OthelloEngineer")
     commits = tracker.get_changes()
-    file_commits = tracker.get_file_changes("sample.bdd")
-    print(file_commits)
+    print(commits)
