@@ -1,15 +1,15 @@
 from dataclasses import dataclass
 
-
-@dataclass
-class NewResponse:
-    message: str
-    context: list[str]
-    user: str
+from pydantic import BaseModel
 
 
-@dataclass
-class Context:
+class Context(BaseModel):
     role: str
     content: str
 
+
+class NewResponse(BaseModel):
+    message: str
+    context: list[Context]
+    user: str
+    model: str

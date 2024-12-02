@@ -6,41 +6,46 @@ from fastapi import FastAPI, APIRouter
 from openai import OpenAI
 import fastapi
 
-from data import NewResponse
+from data import NewResponse, Context
 
 load_dotenv()
 
 app = FastAPI()
 router = APIRouter()
 
-def get_new_message(context, model_version, new_message):
+def get_new_message(context: list[Context], model_version, new_message, user):
     """
     Generates a response from the OpenAI API based on the provided context and new message.
 
     Parameters:
-        context (list): A list of dictionaries representing the conversation history.
+        context (list): A list of Context objects representing the conversation history.
         model_version (str): The model version to use (e.g., 'gpt-3.5-turbo', 'gpt-4').
         new_message (str): The latest message input from the user.
+        user (str): The role of the user, typically "user".
 
     Returns:
         str: The generated response from the OpenAI API.
     """
 
-    client = OpenAI(
-        api_key=os.environ.get("OPEN_AI_TOKEN"),
-    )
-
-    if not client.api_key:
+    openai_api_key = os.environ.get("OPEN_AI_TOKEN")
+    if not openai_api_key:
         raise ValueError("OPEN_AI_TOKEN environment variable not found.")
+    openai.api_key = openai_api_key
 
-    context.append({"role": "user", "content": new_message})
+    new_message_context = Context(role=user, content=new_message)
+    context.append(new_message_context)
 
-    response = client.chat.completions.create(
+    messages = [{"role": c.role, "content": c.content} for c in context]
+
+    print(messages)
+    response = openai.chat.completions.create(
         model=model_version,
-        messages=context
+        messages=messages
     )
-    choice = response.choices[0].message
+    print(response)
+    choice = response.choices[0].message.content
     print(choice)
+    return choice
 
     # Extract the assistant's reply
     #assistant_reply = response['choices'][0]['message']['content'].strip()
@@ -53,30 +58,38 @@ def get_new_message(context, model_version, new_message):
 @router.post("/get_response")
 async def get_response(new_response: NewResponse):
     """
-    Example request:
+    example request:
     {
-        "message": "Who was the MVP of that series?",
-        "context": [
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": "Hello, who won the World Series in 2020?"},
-            {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."}
-        ],
-        "user": "assistant"
-    }
+		"message": "Who was the MVP of that series?",
+		"context": [
+				{"role": "user", "content": "You are a helpful assistant."},
+				{"role": "user", "content": "Hello, who won the World Series in 2020?"},
+				{"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."}
+		],
+		"user": "assistant",
+		"model": "o1-preview-2024-09-12"
+}
     """
-    response = get_new_message(context, model_version, new_message)
-    return {"response": response}
+    print(new_response)
+    new_gippity = get_new_message(
+        new_response.context,
+        new_response.model,
+        new_response.message,
+        new_response.user
+    )
+    print(new_gippity)
+    return {"response": new_gippity}
 
 if __name__ == "1__main__":
     context = [
-        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Hello, who won the World Series in 2020?"},
         {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
     ]
     model_version = "gpt-3.5-turbo"
     new_message = "Who was the MVP of that series?"
-    response = get_new_message(context, model_version, new_message)
-    print(response)
+    #response = get_new_message(context, model_version, new_message)
+    #print(response)
 
 if __name__ == "__main__":
     app.include_router(router)
