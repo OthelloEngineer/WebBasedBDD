@@ -1,10 +1,17 @@
 import os
 import openai
+import uvicorn as uvicorn
 from dotenv import load_dotenv
+from fastapi import FastAPI, APIRouter
 from openai import OpenAI
+import fastapi
+
+from data import NewResponse
 
 load_dotenv()
 
+app = FastAPI()
+router = APIRouter()
 
 def get_new_message(context, model_version, new_message):
     """
@@ -43,8 +50,24 @@ def get_new_message(context, model_version, new_message):
 #
     #return assistant_reply
 
+@router.post("/get_response")
+async def get_response(new_response: NewResponse):
+    """
+    Example request:
+    {
+        "message": "Who was the MVP of that series?",
+        "context": [
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": "Hello, who won the World Series in 2020?"},
+            {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."}
+        ],
+        "user": "assistant"
+    }
+    """
+    response = get_new_message(context, model_version, new_message)
+    return {"response": response}
 
-if __name__ == "__main__":
+if __name__ == "1__main__":
     context = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Hello, who won the World Series in 2020?"},
@@ -54,3 +77,7 @@ if __name__ == "__main__":
     new_message = "Who was the MVP of that series?"
     response = get_new_message(context, model_version, new_message)
     print(response)
+
+if __name__ == "__main__":
+    app.include_router(router)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
