@@ -10,7 +10,7 @@ from data import NewResponse, Context
 
 load_dotenv()
 
-app = FastAPI()
+app = FastAPI(debug=True)
 router = APIRouter()
 
 
@@ -105,7 +105,13 @@ async def get_changes(file_name: str):
         "file_name": "sample.bdd"
     }
     """
-    return tracker.get_file_changes(file_name)
+    print(f"File name: {file_name}")
+    if file_name is None or file_name == "":
+        return {"message": "Please provide a file name."}
+
+    changes = tracker.get_file_changes(file_name)
+    print(f"Changes: {changes}")
+    return changes
 
 
 @router.post("/track_changes")
@@ -128,7 +134,7 @@ async def get_actor():
 @router.get("/get_changes")
 async def get_all_changes():
     commits = tracker.get_changes()
-    return {"commits": [str(commit) for commit in commits]}
+    return commits
 
 app.add_middleware(
     CORSMiddleware,
