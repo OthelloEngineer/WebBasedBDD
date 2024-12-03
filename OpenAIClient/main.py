@@ -3,6 +3,7 @@ import openai
 import uvicorn as uvicorn
 from dotenv import load_dotenv
 from fastapi import FastAPI, APIRouter
+from starlette.middleware.cors import CORSMiddleware
 
 from change_tracker import tracker
 from data import NewResponse, Context
@@ -129,7 +130,14 @@ async def get_all_changes():
     commits = tracker.get_changes()
     return {"commits": [str(commit) for commit in commits]}
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or ["*"] to allow all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
 
 if __name__ == "__main__":
     app.include_router(router)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="localhost", port=8000)
