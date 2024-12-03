@@ -2,11 +2,12 @@ import os
 import openai
 import uvicorn as uvicorn
 from dotenv import load_dotenv
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, HTTPException
 from starlette.middleware.cors import CORSMiddleware
 
 from change_tracker import tracker
 from data import NewResponse, Context
+from dependency_manager import DependencyManager, ScenarioDependency, ScenarioResponse
 
 load_dotenv()
 
@@ -129,6 +130,23 @@ async def get_actor():
 async def get_all_changes():
     commits = tracker.get_changes()
     return {"commits": [str(commit) for commit in commits]}
+
+
+@router.post("/add_dependency")
+async def add_dependency(dep: ScenarioDependency):
+    DependencyManager.add_dependency(dep.scenario, dep.depends_on)
+    return {"message": f"Added dependency: {dep.scenario} depends on {dep.depends_on}"}
+
+@router.get("/get_dependencies/{scenario}", response_model=ScenarioResponse)
+async def get_dependencies(scenario: str):
+    dependencies = DependencyManager.get_dependencies(scenario)
+    if not dependencies:
+        raise HTTPException(status_code=404, detail="Scenario not found")
+    return ScenarioResponse(dependencies=dependencies)
+
+@router.get("/get_all_dependencies")
+async def get_all_dependencies():
+    return {"dependencies": DependencyManager.list_all_dependencies()}
 
 app.add_middleware(
     CORSMiddleware,
