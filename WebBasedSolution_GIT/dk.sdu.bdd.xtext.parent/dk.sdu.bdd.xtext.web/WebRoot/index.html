@@ -12,25 +12,9 @@
     <script src="./scripts/generators/blockGenerator.js" defer></script>
     <script src="./scripts/script.js" defer></script>
   </head>
-  <script>
-    function getCurrentUser() {
-      fetch('http://localhost:8000/get_actor', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      }).then(response => {
-        console.log(response);
-        return response.json();
-      }).then(data => {
-        console.log(data);
-        document.getElementById("currentUser").innerHTML = data.actor_name;
-      });
-      document.getElementById("currentUser").innerHTML = userName;
-    }
-  </script>
   <body>
     <div class="container">
+      <a href="http://localhost:3000"> inspector </a>
       <div class="header">
         <h1>Editor for BDD Scenarios</h1>
         <span class=file-name>
@@ -61,10 +45,9 @@
         <div class="blockly" id="blockly-editor" style="display:block;"></div>
         <div class="blockly" id="blockly-editor2" style="display:none;"></div>
       </div>
-      <div>
+      <div> 
         <button id="save-button" value="Save" title="Save">Save</button>
         <input id="file-input" type="file" style="display: none;"/>
-        
         <button id="load-button" value="Load" title="Load">Load</button>
         <button id="get-ast">Get ast</button>
         <button id="save-scenario" onclick="saveScenario()">Save Scenario</button>
@@ -73,4 +56,48 @@
       </div>
     </div>
   </body>
+  <script>
+    function getCurrentUser() {
+      fetch('http://localhost:8000/get_actor', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      }).then(response => {
+        console.log("get user response1: " + response);
+        return response.json();
+      }).then(data => {
+        console.log("get user response2: " + data);
+        document.getElementById("currentUser").innerHTML = data.actor_name;
+      });
+      document.getElementById("currentUser").innerHTML = userName;
+    }
+
+    function setUserName() {
+      console.log("setUserName");
+      var userName = document.getElementById("userName").value;
+      var url = 'http://localhost:8000/set_actor?actor_name=' + userName + '&actor_email=weird@mail.com';
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }).then(response => {
+        console.log("set user response1: " + response);
+        return response.json();
+      }).then(data => {
+        console.log("set user response2: " + data);
+        document.getElementById("currentUser").innerHTML = userName;
+      });
+    }
+
+    let userNameField = document.getElementById("userName");
+    console.log("userNameField: " + userNameField);
+    userNameField.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        setUserName();
+      }
+    });
+  </script>
 </html>
