@@ -12,6 +12,23 @@
     <script src="./scripts/generators/blockGenerator.js" defer></script>
     <script src="./scripts/script.js" defer></script>
   </head>
+  <script>
+    function getCurrentUser() {
+      fetch('http://localhost:8000/get_actor', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      }).then(response => {
+        console.log(response);
+        return response.json();
+      }).then(data => {
+        console.log(data);
+        document.getElementById("currentUser").innerHTML = data.actor_name;
+      });
+      document.getElementById("currentUser").innerHTML = userName;
+    }
+  </script>
   <body>
     <div class="container">
       <div class="header">
@@ -19,6 +36,11 @@
         <span class=file-name>
           <label for="fileName">File name</label>
           <input id="fileName" type="text" maxlength="35"/>
+          <label for="userName">User name</label>
+          <input id="userName" type="text" maxlength="35"/>
+          <label id="userLabel" > current user: </span>
+          <span id="currentUser"></span>
+          <button id="refreshUser" onclick="getCurrentUser()">Refresh User</button>
       </div>
       <div class="editor-tab">
         <span id="entity-tab" data-editor-id="xtext-editor-entities" class="tab">Entities</span>
@@ -42,6 +64,7 @@
       <div>
         <button id="save-button" value="Save" title="Save">Save</button>
         <input id="file-input" type="file" style="display: none;"/>
+        
         <button id="load-button" value="Load" title="Load">Load</button>
         <button id="get-ast">Get ast</button>
         <button id="save-scenario" onclick="saveScenario()">Save Scenario</button>

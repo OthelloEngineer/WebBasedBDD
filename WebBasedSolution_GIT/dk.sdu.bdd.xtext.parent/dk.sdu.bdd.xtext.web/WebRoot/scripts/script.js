@@ -410,6 +410,15 @@ function saveEntities() {
     console.error('Error:', error); // Log any network errors
     alert('An error occurred while saving the entities.'); // Notify the user of an error
   });
+
+  fetch('localhost:8000/track_changes', {
+  }).then(response => {
+	if (response.ok) {
+	  alert('Changes tracked successfully!');
+	} else {
+	  alert('Error tracking changes.');
+	}
+  });
 }
 
 
@@ -425,4 +434,18 @@ function runScenario() {
   });
 }
 
+
+function getCurrentUser() {
+  fetch('localhost:8000/get_actor', {
+	method: 'GET',
+  }).then(response => {
+	if (response.ok) {
+	  console.log("getting actor");
+	  console.log(response);
+	  return document.getElementById('currentUser').value = response.actor_name;
+	} else {
+	  alert('Error retrieving user.');
+	}
+  });
+}
 
