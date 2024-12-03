@@ -38,7 +38,7 @@ def detect_conflicts(bdd_text, model_version="gpt-3.5-turbo"):
         )
     ]
 
-    # Convert Context objects to dictionaries
+    # Convert Context objects to dictionaries.
     messages = [{"role": c.role, "content": c.content} for c in context]
 
     # Call the OpenAI API
