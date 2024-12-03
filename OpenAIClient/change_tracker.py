@@ -7,6 +7,7 @@ from pydantic import BaseModel
 
 class FileChange(BaseModel):
     file_name: str
+    timestamp: str
     commit_sha: str
     before: str
     after: str
@@ -69,7 +70,8 @@ class ChangeTracker:
                     b_diff = change.b_blob.data_stream.read().decode('utf-8')
                     changes.append(
                         FileChange(file_name=change.a_path, commit_sha=commit.hexsha, before=a_diff,
-                                   after=b_diff, user=author.name))
+                                   after=b_diff, user=author.name,
+                                   timestamp=commit.authored_datetime.time()))
                     print(f"A_DIFF:\n{a_diff}\nB_DIFF\n{b_diff}")
             prev_commit = commit
         return changes
@@ -89,8 +91,15 @@ class ChangeTracker:
 
                     a_diff = change.a_blob.data_stream.read().decode('utf-8')
                     b_diff = change.b_blob.data_stream.read().decode('utf-8')
+
+                    prev_author = commit.author.name
+                    if prev_commit != NULL_TREE:
+                        prev_author = prev_commit.author.name
+
                     changes.append(
-                        FileChange(file_name=file_path, commit_sha=commit.hexsha, before=a_diff, after=b_diff, user=commit.author.name))
+                        FileChange(file_name=file_path, commit_sha=commit.hexsha, before=a_diff, after=b_diff, user=prev_author,
+                                   timestamp=str(commit.authored_datetime.strftime('%Y-%m-%d %H:%M:%S')))
+                    )
                     print(f"A_DIFF:\n{a_diff}\nB_DIFF\n{b_diff}")
             prev_commit = commit
 

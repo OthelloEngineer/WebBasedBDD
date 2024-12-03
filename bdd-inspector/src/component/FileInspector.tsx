@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
-// Define the FileChange interface
 export interface FileChange {
   file_name: string;
   commit_sha: string;
   before: string;
   after: string;
   user: string;
+  timestamp: string;
 }
 
 export default function FileInspector() {
   const [changes, setChanges] = useState<FileChange[]>([]);
   const [error, setError] = useState<string | null>(null);
-
+  const [currentFile, setCurrentFile] = useState<string>('sample.bdd');
+  const [currentFileInput, setCurrentFileInput] = useState<string>('sample.bdd');
   useEffect(() => {
-    fetch('http://localhost:8000/get_changes/sample.bdd')
+    fetch('http://localhost:8000/get_changes/' + currentFile)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -28,11 +29,15 @@ export default function FileInspector() {
         setError(err.message);
         console.error('Error fetching changes:', err);
       });
-  }, []);
+  }, [currentFile]);
+
+
 
   return (
     <div style={{ padding: '20px' }}>
       <h1>File Inspector</h1>
+      <input type="text" placeholder={currentFileInput} onChange={(e) =>  setCurrentFileInput(e.target.value)} />
+        <button onClick={() => setCurrentFile(currentFileInput)}>Inspect</button>
       <p>
         Inspecting the file: <strong>sample.bdd</strong>
       </p>
@@ -47,7 +52,7 @@ export default function FileInspector() {
             <div key={index} style={styles.changeContainer}>
               <h2>Commit: {change.commit_sha}</h2>
               <p>
-                <strong>User:</strong> {change.user}
+                <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp} 
               </p>
               <p>
                 <strong>File Name:</strong> {change.file_name}
@@ -93,5 +98,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '10px',
     borderRadius: '4px',
     overflowX: 'auto', // Correctly typed
+    textAlign: 'left', // Correctly typed
+    alignItems: 'left', // Incorrectly typed
+    justifyContent: 'left', // Incorrectly typed
   },
 };
