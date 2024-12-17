@@ -114,11 +114,15 @@ export default function DependencyManager() {
           placeholder="Scenario Title"
           value={newScenario.title}
           onChange={e => setNewScenario({ ...newScenario, title: e.target.value })}
+          style={{    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
+            }}
         />
         <textarea
           placeholder="Scenario Content"
           value={newScenario.content}
           onChange={e => setNewScenario({ ...newScenario, content: e.target.value })}
+                    style={{    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
+                    }}
         />
         <button style={styles.button} onClick={addScenario}>Add Scenario</button>
       </div>
@@ -181,5 +185,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '16px',
     fontWeight: 'bold',
     transition: 'background-color 0.3s ease, transform 0.3s ease',
+        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
     },
 };
