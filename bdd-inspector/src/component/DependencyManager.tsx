@@ -153,38 +153,6 @@ export default function DependencyManager() {
         <button style={styles.button} onClick={addDependency}>Add Dependency</button>
       </div>
 
-      {/* Change User */}
-      <div>
-        <h2>Change User</h2>
-        <input
-          type="text"
-          placeholder="User Name"
-          value={currentUserInput}
-          onChange={e => setCurrentUserInput(e.target.value)}
-        />
-        <button style={styles.button}
-         onClick={() => setNewUser(currentUserInput)}>Set User</button>
-      </div>
-
-      <p>
-        {currentUser === '' ? 'Viewing changes made by user: ' + currentUser : 'Viewing as user: ' + currentUser}
-      </p>
-
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
-
-      {!error && scenarios.length === 0 && <p>No scenarios available or loading...</p>}
-
-      {!error && scenarios.length > 0 && (
-        <div>
-          {scenarios.map(scenario => (
-            <div key={scenario.id} style={styles.scenarioContainer}>
-              <h2>{scenario.title}</h2>
-              <p>{scenario.content}</p>
-              <p><strong>Dependencies:</strong> {scenario.dependencies.join(', ') || 'None'}</p>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
