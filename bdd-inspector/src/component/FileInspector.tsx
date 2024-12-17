@@ -145,18 +145,26 @@ export default function FileInspector() {
         <div>
           {changes.map((change: FileChange, index: number) => (
             <div key={index} style={styles.changeContainer}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', height: '30px' }}> 
-                <h2>Commit: {change.commit_sha}</h2>
-                <button style={styles.button} >
-                  revert this change
-                </button>
-              </div>
-              <p>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}> 
+                <div 
+                  style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                              <p>
                 <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp} 
               </p>
               <p>
                 <strong>File Name:</strong> {change.file_name}
               </p>
+                <p>
+                  <strong> Change ID:</strong> {change.commit_sha} 
+
+                  </p>
+                  </div>
+                  <div>
+                <button style={styles.button} >
+                  Revert this change
+                </button>
+                </div>
+              </div>
               <div style={styles.diffContainer}>
                 <div style={styles.before}>
                   <h3>Before:</h3>
@@ -189,12 +197,15 @@ const styles: { [key: string]: React.CSSProperties } = {
     flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
+
   before: {
     width: '48%',
   },
+
   after: {
     width: '48%',
   },
+
   codeBlock: {
     background: 'linear-gradient(to bottom, #ffffff 0%, #c0c0c0 100%)',
     padding: '10px',
