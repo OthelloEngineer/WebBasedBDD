@@ -185,11 +185,14 @@ export default function FileInspector() {
         <div>
           {changes.map((change: FileChange, index: number) => (
             <div key={index} style={styles.changeContainer}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}> 
+              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}> 
                 <div 
                   style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <p>
                     <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp}  - <strong> Dependencies:</strong> {change.dependencies?.join(", ") || "None"}
+                    <br></br>
+                    <strong> 
+                       change ID:</strong>{change.commit_sha}
                   </p>
                   </div>
                   <div>
@@ -197,7 +200,7 @@ export default function FileInspector() {
                   <div
                   style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}
                   >
-                  Revert this change
+                  Revert to v{changes.length - (index+1)}
                   <img src="https://cdn-icons-png.flaticon.com/512/10597/10597336.png" style={
                     {
                       width: '40px',
@@ -211,13 +214,14 @@ export default function FileInspector() {
                 </div>
               </div>
               <div style={styles.diffContainer}>
-                <div style={styles.before}>
-                  <h3>Before:</h3>
+                <div style={styles.before}> 
+                  <h3>Before: v{changes.length - (index+1)}</h3>
                   <pre style={styles.codeBlock}>{change.before}</pre>
                 </div>
                 <div style={styles.after}>
-                  <h3>After:</h3>
-                  <pre style={styles.codeBlock}>{change.after}</pre>
+                  <h1></h1>
+                  <h3>After: v{changes.length - index}</h3>
+                  <pre style={styles.codeBlock}>{change.after}</pre> 
                 </div>
               </div>
             </div>
