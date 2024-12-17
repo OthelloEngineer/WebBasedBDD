@@ -116,7 +116,9 @@ export default function FileInspector() {
       type="text" 
       placeholder={currentUserInput} 
       onChange={(e) => setCurrentUserInput(e.target.value)} 
-      style={{ marginRight: '10px', padding: '6px', borderRadius: '4px', border: '1px solid #ccc' }}
+      style={{ marginRight: '10px', padding: '6px', borderRadius: '4px', border: '1px solid #ccc',
+            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
+       }}
     />
     <button
       style={styles.button}
@@ -143,7 +145,12 @@ export default function FileInspector() {
         <div>
           {changes.map((change: FileChange, index: number) => (
             <div key={index} style={styles.changeContainer}>
-              <h2>Commit: {change.commit_sha}</h2>
+              <div style={{ display: 'flex', justifyContent: 'space-between', height: '30px' }}> 
+                <h2>Commit: {change.commit_sha}</h2>
+                <button style={styles.button} >
+                  revert this change
+                </button>
+              </div>
               <p>
                 <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp} 
               </p>
@@ -210,5 +217,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '16px',
     fontWeight: 'bold',
     transition: 'background-color 0.3s ease, transform 0.3s ease',
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
   },
 };
