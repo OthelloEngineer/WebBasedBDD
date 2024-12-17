@@ -8,7 +8,11 @@ function App() {
     <Router>
       <div className="App">
 <header className="App-header">
-  <h1>My Application</h1>
+  <h1 style={
+    {
+      color: 'white',
+    }
+  }>My Application</h1>
   <nav>
     <ul className="nav-list">
       <li><Link to="/">Home</Link></li>

@@ -95,7 +95,10 @@ export default function FileInspector() {
       type="text" 
       placeholder={currentFileInput} 
       onChange={(e) => setCurrentFileInput(e.target.value)} 
-      style={{ marginRight: '10px', padding: '6px', borderRadius: '4px', border: '1px solid #ccc' }}
+      style={{ marginRight: '10px', padding: '6px', borderRadius: '4px', border: '1px solid #ccc',
+                        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.35)', // Add a subtle drop shadow
+       }}
+      
     />
     <button
       style={styles.button}
@@ -168,10 +171,11 @@ export default function FileInspector() {
 
 const styles: { [key: string]: React.CSSProperties } = {
   changeContainer: {
-    border: '1px solid #ccc',
+    border: '1px solid #2D174C55',
     padding: '15px',
     marginBottom: '20px',
     borderRadius: '5px',
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
   },
   diffContainer: {
     display: 'flex',
@@ -185,13 +189,16 @@ const styles: { [key: string]: React.CSSProperties } = {
     width: '48%',
   },
   codeBlock: {
-    backgroundColor: '#f7f7f7',
+    background: 'linear-gradient(to bottom, #ffffff 0%, #c0c0c0 100%)',
     padding: '10px',
     borderRadius: '4px',
+    border: '2px solid #3c0857',
     overflowX: 'auto',
     textAlign: 'left',
     alignItems: 'left',
     justifyContent: 'left',
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
+
   },
   button: {
     backgroundColor: '#32405C',

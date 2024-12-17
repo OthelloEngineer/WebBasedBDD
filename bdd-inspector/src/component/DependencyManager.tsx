@@ -18,8 +18,8 @@ export default function DependencyManager() {
   const dummyScenarios: Scenario[] = [
     { id: 1, title: 'Assembling Lego', content: 'This scenario involves assembling a Lego set.', dependencies: [] },
     { id: 2, title: 'Assembling Lego2', content: 'This scenario involves assembling another Lego set.', dependencies: [1] },
-    { id: 3, title: 'Stacking Boxes', content: 'Given the position of the robot "Loader" is "stationA"\ When the robot "Loader" moves to position "stationC"\ Then the position of the robot "Loader" is "stationC"', dependencies: [] },
-    { id: 4, title: 'Stacking Boxes2', content: 'Given the position of the robot "Loader2" is "stationC"\ When the robot "Loader2" moves to position "stationA"\ Then the position of the robot "Loader2" is "stationA"', dependencies: [3] }, // Scenario 2 depends on Scenario 1
+    { id: 3, title: 'Stacking Boxes', content: 'Given the position of the robot "Loader" is "stationA" \n When the robot "Loader" moves to position "stationC" \n Then the position of the robot "Loader" is "stationC"', dependencies: [] },
+    { id: 4, title: 'Stacking Boxes2', content: 'Given the position of the robot "Loader2" is "stationC" \n When the robot "Loader2" moves to position "stationA" \n Then the position of the robot "Loader2" is "stationA"', dependencies: [3] }, // Scenario 2 depends on Scenario 1
   ];
 
 
@@ -144,7 +144,11 @@ export default function DependencyManager() {
       </div>
 
       {!error && scenarios.length > 0 && (
-        <div>
+        <div style={
+          {
+                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.9)', // Add a subtle drop shadow
+          }
+        }>
           {scenarios.map(scenario => (
             <div key={scenario.id} style={styles.scenarioContainer}>
               <h2>{scenario.title}</h2>
