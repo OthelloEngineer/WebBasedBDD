@@ -7,7 +7,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from change_tracker import tracker
 from data import NewResponse, Context
-from dependency_manager import DependencyManager, ScenarioDependency, ScenarioResponse
+from dependency_manager import Scenario, ScenarioDependencyResponse, AllDependenciesResponse, DependencyManager
 
 load_dotenv()
 
@@ -138,21 +138,58 @@ async def get_all_changes():
     return commits
 
 
+# DependencyManager endpoints
+@router.post("/add_scenario", response_model=Scenario)
+async def add_scenario(scenario: Scenario):
+    """
+    Adds a new scenario to the DependencyManager.
+    """
+    new_scenario = Scenario(
+        id=DependencyManager.next_id,
+        title=Scenario.title,
+        content=Scenario.content,
+        dependencies=Scenario.dependencies
+    )
+    DependencyManager.scenarios[new_scenario.id] = new_scenario
+    DependencyManager.next_id += 1
+    return new_scenario
+
+
 @router.post("/add_dependency")
-async def add_dependency(dep: ScenarioDependency):
-    DependencyManager.add_dependency(dep.scenario, dep.depends_on)
-    return {"message": f"Added dependency: {dep.scenario} depends on {dep.depends_on}"}
+async def add_dependency(scenario_id: int, depends_on_id: int):
+    """
+    Adds a dependency between two scenarios.
+    """
+    try:
+        DependencyManager.set_dependency(scenario_id, depends_on_id)
+        return {"message": f"Scenario {scenario_id} now depends on Scenario {depends_on_id}"}
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
-@router.get("/get_dependencies/{scenario}", response_model=ScenarioResponse)
-async def get_dependencies(scenario: str):
-    dependencies = DependencyManager.get_dependencies(scenario)
-    if not dependencies:
+
+@router.get("/get_dependencies/{scenario_id}", response_model=ScenarioDependencyResponse)
+async def get_dependencies(scenario_id: int):
+    """
+    Retrieves dependencies for a specific scenario.
+    """
+    scenario = DependencyManager.get_scenario_by_id(scenario_id)
+    if not scenario:
         raise HTTPException(status_code=404, detail="Scenario not found")
-    return ScenarioResponse(dependencies=dependencies)
+    return ScenarioDependencyResponse(
+        scenario_id=scenario_id,
+        dependencies=scenario.dependencies
+    )
 
-@router.get("/get_all_dependencies")
+
+@router.get("/get_all_dependencies", response_model=AllDependenciesResponse)
 async def get_all_dependencies():
-    return {"dependencies": DependencyManager.list_all_dependencies()}
+    """
+    Retrieves all scenarios and their dependencies.
+    """
+    all_dependencies = {
+        scenario.id: scenario.dependencies for scenario in DependencyManager.scenarios.values()
+    }
+    return AllDependenciesResponse(dependencies=all_dependencies)
 
 app.add_middleware(
     CORSMiddleware,

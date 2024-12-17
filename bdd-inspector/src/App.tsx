@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FileInspector from './component/FileInspector';
+import DependencyManager from './component/DependencyManager';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
       <h1>File Inspector</h1>
       <FileInspector />
+      <DependencyManager />
     </div>
   );
 }
