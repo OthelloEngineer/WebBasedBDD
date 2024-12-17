@@ -9,9 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <h1>File Inspector</h1>
       <FileInspector />
-      <DependencyManager />
+      <div className="flex-container">
+        <DependencyManager />
+      </div>
     </div>
   );
 }

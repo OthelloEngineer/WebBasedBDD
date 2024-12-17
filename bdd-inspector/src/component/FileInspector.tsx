@@ -87,24 +87,50 @@ export default function FileInspector() {
     }
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>File Inspector</h1>
-      <input type="text" placeholder={currentFileInput} onChange={(e) =>  setCurrentFileInput(e.target.value)} />
-        <button onClick={() => 
-        {
-            setCurrentFile(currentFileInput)
-            console.log("currentFileInput:", currentFileInput)
-        }
-            }>Inspect</button>
-    <input type="text" placeholder={currentUserInput} onChange={(e) =>  setCurrentUserInput(e.target.value)} />
-    <button onClick={() =>
-        {
-            setNewUser(currentUserInput)
-            console.log("currentUserInput:", currentUserInput)
-        }}>Change User</button>
-      <p>
-            {currentFile === '' ? 'inspected changes in BDDs in the last 10 days made by user: ' + currentUser: "inspecting BDD: " + currentFile}
-      </p>
+<div style={styles.changeContainer}>
+  <h1>File Inspector</h1>
+  
+  <div style={{ marginBottom: '10px' }}>
+    <input 
+      type="text" 
+      placeholder={currentFileInput} 
+      onChange={(e) => setCurrentFileInput(e.target.value)} 
+      style={{ marginRight: '10px', padding: '6px', borderRadius: '4px', border: '1px solid #ccc' }}
+    />
+    <button
+      style={styles.button}
+      onClick={() => {
+        setCurrentFile(currentFileInput);
+        console.log("currentFileInput:", currentFileInput);
+      }}
+    >
+      Inspect
+    </button>
+  </div>
+  
+  <div style={{ marginBottom: '10px' }}>
+    <input 
+      type="text" 
+      placeholder={currentUserInput} 
+      onChange={(e) => setCurrentUserInput(e.target.value)} 
+      style={{ marginRight: '10px', padding: '6px', borderRadius: '4px', border: '1px solid #ccc' }}
+    />
+    <button
+      style={styles.button}
+      onClick={() => {
+        setNewUser(currentUserInput);
+        console.log("currentUserInput:", currentUserInput);
+      }}
+    >
+      Change User
+    </button>
+  </div>
+
+  <p>
+    {currentFile === '' 
+      ? `inspected changes in BDDs in the last 10 days made by user: ${currentUser}` 
+      : `inspecting BDD: ${currentFile}`}
+  </p>
 
       {error && <p style={{ color: 'red' }}>Error: {error}</p>}
 
@@ -162,9 +188,20 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#f7f7f7',
     padding: '10px',
     borderRadius: '4px',
-    overflowX: 'auto', 
+    overflowX: 'auto',
     textAlign: 'left',
     alignItems: 'left',
     justifyContent: 'left',
+  },
+  button: {
+    backgroundColor: '#32405C',
+    border: 'none',
+    color: '#fff',
+    padding: '8px 16px',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s ease, transform 0.3s ease',
   },
 };

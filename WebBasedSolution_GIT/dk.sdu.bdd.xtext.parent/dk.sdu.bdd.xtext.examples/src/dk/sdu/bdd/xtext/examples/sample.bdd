@@ -1,3 +1,20 @@
-hello world
+declarative entity robot {
+	actions: moves
+	properties: position, speed
+}
 
-hello world 123
+declarative entity gripper {
+	actions: closes, opens
+	states: closed, opened	 
+}
+
+Scenario: "Stacking Boxes"
+Given the position of the robot "Loader" is "stationA"
+When the robot "Loader" moves to position "stationB"
+Then the position of the robot "Loader" is "stationB"
+
+
+Scenario: "Stacking Boxes2"
+Given the position of the robot "Loader2" is "stationA"
+When the robot "Loader2" moves to position "stationB"
+Then the position of the robot "Loader2" is "stationB"

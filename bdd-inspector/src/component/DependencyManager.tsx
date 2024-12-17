@@ -13,11 +13,21 @@ export default function DependencyManager() {
   const [newScenario, setNewScenario] = useState({ title: '', content: '', dependencies: [] });
   const [currentScenarioId, setCurrentScenarioId] = useState<number | null>(null);
   const [dependencyId, setDependencyId] = useState<number | null>(null);
-  const [currentUser, setCurrentUser] = useState<string>('general');
-  const [currentUserInput, setCurrentUserInput] = useState<string>('');
+
+  // Dummy data for scenarios
+  const dummyScenarios: Scenario[] = [
+    { id: 1, title: 'Assembling Lego', content: 'This scenario involves assembling a Lego set.', dependencies: [] },
+    { id: 2, title: 'Assembling Lego2', content: 'This scenario involves assembling another Lego set.', dependencies: [1] },
+    { id: 3, title: 'Stacking Boxes', content: 'Given the position of the robot "Loader" is "stationA"\ When the robot "Loader" moves to position "stationC"\ Then the position of the robot "Loader" is "stationC"', dependencies: [] },
+    { id: 4, title: 'Stacking Boxes2', content: 'Given the position of the robot "Loader2" is "stationC"\ When the robot "Loader2" moves to position "stationA"\ Then the position of the robot "Loader2" is "stationA"', dependencies: [3] }, // Scenario 2 depends on Scenario 1
+  ];
+
 
   useEffect(() => {
-    fetchScenarios();
+    // Use dummy data initially, but simulate fetching data from an API
+    setScenarios(dummyScenarios);
+    // If backend is available, uncomment the fetch logic below
+    // fetchScenarios();
   }, []);
 
   // Fetch all scenarios from the backend
@@ -92,26 +102,6 @@ export default function DependencyManager() {
       });
   }
 
-  // Change the current user
-  function setNewUser(actorName: string) {
-    const actorEmail = 'random@example.com';
-    const url = `http://localhost:8000/set_actor?actor_name=${encodeURIComponent(actorName)}&actor_email=${encodeURIComponent(actorEmail)}`;
-
-    fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' } })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        setCurrentUser(actorName);
-      })
-      .catch(error => {
-        console.error('Error setting current user:', error);
-      });
-  }
-
   return (
     <div style={{ padding: '20px' }}>
       <h1>Dependency Manager</h1>
@@ -130,7 +120,7 @@ export default function DependencyManager() {
           value={newScenario.content}
           onChange={e => setNewScenario({ ...newScenario, content: e.target.value })}
         />
-        <button onClick={addScenario}>Add Scenario</button>
+        <button style={styles.button} onClick={addScenario}>Add Scenario</button>
       </div>
 
       {/* Select Scenario to Add Dependency */}
@@ -150,40 +140,9 @@ export default function DependencyManager() {
           value={dependencyId || ''}
           onChange={e => setDependencyId(Number(e.target.value))}
         />
-        <button onClick={addDependency}>Add Dependency</button>
+        <button style={styles.button} onClick={addDependency}>Add Dependency</button>
       </div>
 
-      {/* Change User */}
-      <div>
-        <h2>Change User</h2>
-        <input
-          type="text"
-          placeholder="User Name"
-          value={currentUserInput}
-          onChange={e => setCurrentUserInput(e.target.value)}
-        />
-        <button onClick={() => setNewUser(currentUserInput)}>Set User</button>
-      </div>
-
-      <p>
-        {currentUser === '' ? 'Viewing changes made by user: ' + currentUser : 'Viewing as user: ' + currentUser}
-      </p>
-
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
-
-      {!error && scenarios.length === 0 && <p>No scenarios available or loading...</p>}
-
-      {!error && scenarios.length > 0 && (
-        <div>
-          {scenarios.map(scenario => (
-            <div key={scenario.id} style={styles.scenarioContainer}>
-              <h2>{scenario.title}</h2>
-              <p>{scenario.content}</p>
-              <p><strong>Dependencies:</strong> {scenario.dependencies.join(', ') || 'None'}</p>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
@@ -194,5 +153,17 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '15px',
     marginBottom: '20px',
     borderRadius: '5px',
+    gap: '10px',
   },
+    button: {
+    backgroundColor: '#32405C',
+    border: 'none',
+    color: '#fff',
+    padding: '8px 16px',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s ease, transform 0.3s ease',
+    },
 };
