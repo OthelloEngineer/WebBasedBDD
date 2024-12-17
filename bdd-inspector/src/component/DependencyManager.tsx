@@ -104,7 +104,7 @@ export default function DependencyManager() {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Dependency Manager</h1>
+      <h1>Manual Dependency Manager</h1>
 
       {/* Add New Scenario Form */}
       <div>
@@ -142,6 +142,18 @@ export default function DependencyManager() {
         />
         <button style={styles.button} onClick={addDependency}>Add Dependency</button>
       </div>
+
+      {!error && scenarios.length > 0 && (
+        <div>
+          {scenarios.map(scenario => (
+            <div key={scenario.id} style={styles.scenarioContainer}>
+              <h2>{scenario.title}</h2>
+              <p>{scenario.content}</p>
+              <p><strong>Dependencies:</strong> {scenario.dependencies.join(', ') || 'None'}</p>
+            </div>
+          ))}
+        </div>
+        )}
 
     </div>
   );
