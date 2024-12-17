@@ -11,7 +11,9 @@ function App() {
       </header>
       <h1>File Inspector</h1>
       <FileInspector />
-      <DependencyManager />
+      <div className="flex-container">
+        <DependencyManager />
+      </div>
     </div>
   );
 }

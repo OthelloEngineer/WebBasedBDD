@@ -13,7 +13,6 @@ export default function DependencyManager() {
   const [newScenario, setNewScenario] = useState({ title: '', content: '', dependencies: [] });
   const [currentScenarioId, setCurrentScenarioId] = useState<number | null>(null);
   const [dependencyId, setDependencyId] = useState<number | null>(null);
-  const [currentUser, setCurrentUser] = useState<string>('general');
   const [currentUserInput, setCurrentUserInput] = useState<string>('');
 
   useEffect(() => {
@@ -92,29 +91,9 @@ export default function DependencyManager() {
       });
   }
 
-  // Change the current user
-  function setNewUser(actorName: string) {
-    const actorEmail = 'random@example.com';
-    const url = `http://localhost:8000/set_actor?actor_name=${encodeURIComponent(actorName)}&actor_email=${encodeURIComponent(actorEmail)}`;
-
-    fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' } })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        setCurrentUser(actorName);
-      })
-      .catch(error => {
-        console.error('Error setting current user:', error);
-      });
-  }
-
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Dependency Manager</h1>
+      <h1>Manual Dependency Manager</h1>
 
       {/* Add New Scenario Form */}
       <div>
@@ -152,22 +131,6 @@ export default function DependencyManager() {
         />
         <button onClick={addDependency}>Add Dependency</button>
       </div>
-
-      {/* Change User */}
-      <div>
-        <h2>Change User</h2>
-        <input
-          type="text"
-          placeholder="User Name"
-          value={currentUserInput}
-          onChange={e => setCurrentUserInput(e.target.value)}
-        />
-        <button onClick={() => setNewUser(currentUserInput)}>Set User</button>
-      </div>
-
-      <p>
-        {currentUser === '' ? 'Viewing changes made by user: ' + currentUser : 'Viewing as user: ' + currentUser}
-      </p>
 
       {error && <p style={{ color: 'red' }}>Error: {error}</p>}
 
