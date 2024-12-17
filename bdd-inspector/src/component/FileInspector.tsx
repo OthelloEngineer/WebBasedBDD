@@ -132,10 +132,49 @@ export default function FileInspector() {
     </button>
   </div>
 
-  <p>
+      
+  <p
+          style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'left',
+        gap: '10px',
+        alignItems: 'center',
+      }}
+  > current user:  
+    <strong> {currentUser} </strong>
+    <img src="https://cdn-icons-png.flaticon.com/512/3237/3237472.png"
+    style={{
+      width: '20px',
+      height: '20px',
+      borderRadius: '30%', // Fully rounded corners (circular)
+      objectFit: 'cover', // Ensures the image fits within rounded edges
+    }}
+    ></img>
+  </p>
+
+  <p
+            style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'left',
+        gap: '10px',
+        alignItems: 'center',
+      }}
+  >
     {currentFile === '' 
       ? `inspected changes in BDDs in the last 10 days made by user: ${currentUser}` 
       : `inspecting BDD: ${currentFile}`}
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8ii+YAg+UMhuWeyPLd6frU5/oZi+bE2vbk8PsYiOXp8/zx+P47lugbieYnj+czk+iLvPBco+u41/aozvR2se1OnurK4PiZw/Le7fs8l+gmjuaPv/Gcx/L2+v6ry/ORdx9UAAADPElEQVR4nO3dgW7aMBDG8cShZXXANAECWVf6/m85JlDXzW0lenffnbbv/wCoP9lnI0FJ0zDGGGOMMcYYY+z/7dTP93qtvDl/dToMU0marXtv09tWx3XKpbSa5UjEXdup4q7ExygbdTUm3dX7TYyxivPGYgEvxO8RiHNrs4AX4tp/o/ZPhsAzceNOnLIlMMAsHpMt0H0We3Og96WxN96jF6LjLPbZ9Jh5Jfq9u1mY3YRRiCNkCVu/WVzZ3oV/El1W8Q5wkr4SXTbqFij02ai7+qDJnbCPrx+PS6M+SvOwEPbjs1WEb9RamGbpa/bLj08v/Cy+I7yTvubDJ0L8LMKF51nEriJeiN6oDkIw0UOIvTRchNBLw0eI3KhOQuCl4SXEzaKbEDaLfkLULDoKQbPoKcRsVFchZKP6ChEf2zgLAZeGt9B+Ft2F5rPoL7S+NAIIjWcxgtB2o4YQmhJjCC1nMYjQ8NKIIrTbqGGEZhs1jtDq0ggkNJrFSEKbWQwlNJnFWEKLj22CCQ02ajShPjGcUP3SiCfUvjQCCpU3akRhm541aNdCCruFBu0ahV+JQgopvC0Kv9LDbf+kWH//M7zw9O2mXqo/Ibzwxubqa8r/mrD+qjmFN0UhIAqFUQiIQmEUAqJQGIWAKBRGISAKhVEIiEJhFAKiUBiFgCgURiEgCoVRCIhCYRQColAYhYAoFEYhIAqFUQiIQmEUAqJQGIWAKBRGISAKhVEIiEJhFAKiUBiFgCgURiEgCoVRCIhCYRQColAYhYAoFEYhIAqFUQiIQmEUAqJQGIWAKBRGISAKhVEIiEJhFAKiUBiFgCgURiEgCoXVwjwssA3ZVLirfy88d9gqYNvtFIXbaosEKG0VhfUQBCjNisLVk/BX/g0qS9XnIY0BhaMm8L2jxjvVg6Zp+hxtEUtRfi7Zvj6tfct7XWDTRztNk/oDAo+xiOmoDWyaKdI+zZM+sOkD3YnlyeSxwLP04T5qlVbz7cxb4ibGrdhtjIDnN29j8l/Gkkaz54+f27bey9gtdd/LVJ2O65SLz0qWktPj88kW+Mt4GKblbc/bUmo5DQd731XZz/fo5h6lY4wxxhhjjDHGWMR+Amo5WS/o7yv/AAAAAElFTkSuQmCC"
+      style={
+        {
+          width: '30px',
+          height: '30px',
+          borderRadius: '30%', // Fully rounded corners (circular)
+          objectFit: 'cover', // Ensures the image fits within rounded edges
+        }
+      }
+      ></img>
   </p>
 
       {error && <p style={{ color: 'red' }}>Error: {error}</p>}
@@ -152,17 +191,23 @@ export default function FileInspector() {
                     <p>
                     <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp}  - <strong> Dependencies:</strong> {change.dependencies?.join(", ") || "None"}
                   </p>
-                  <p>
-                    <strong>File Name:</strong> {change.file_name}
-                  </p>
-                  <p>
-                  <strong> Change ID:</strong> {change.commit_sha} 
-                  </p>
-                </div>
-                <div>
-                  <button style={styles.button} >
-                    Revert this change
-                  </button>
+                  </div>
+                  <div>
+                <button style={styles.button} >
+                  <div
+                  style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}
+                  >
+                  Revert this change
+                  <img src="https://cdn-icons-png.flaticon.com/512/10597/10597336.png" style={
+                    {
+                      width: '40px',
+                      height: '40px',
+                      margin: '0 0 0 10px',
+                      padding: '5px',
+                    }
+                  }></img>
+                  </div>
+                </button>
                 </div>
               </div>
               <div style={styles.diffContainer}>
