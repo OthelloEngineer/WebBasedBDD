@@ -14,8 +14,8 @@ export default function FileInspector() {
   const [changes, setChanges] = useState<FileChange[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [currentFile, setCurrentFile] = useState<string>('');
-  const [currentFileInput, setCurrentFileInput] = useState<string>('');
-  const [currentUserInput, setCurrentUserInput] = useState<string>('');
+  const [currentFileInput, setCurrentFileInput] = useState<string>('input .bdd file name');
+  const [currentUserInput, setCurrentUserInput] = useState<string>('general');
   const [currentUser, setCurrentUser] = useState<string>("general");
   useEffect(() => {
     getChanges();
@@ -108,7 +108,7 @@ export default function FileInspector() {
         console.log("currentFileInput:", currentFileInput);
       }}
     >
-      Inspect
+      Revise File
     </button>
   </div>
   
