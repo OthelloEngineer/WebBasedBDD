@@ -7,6 +7,7 @@ export interface FileChange {
   after: string;
   user: string;
   timestamp: string;
+  dependencies?: number[]; 
 }
 
 export default function FileInspector() {
@@ -148,21 +149,20 @@ export default function FileInspector() {
               <div style={{ display: 'flex', justifyContent: 'space-between' }}> 
                 <div 
                   style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                              <p>
-                <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp} 
-              </p>
-              <p>
-                <strong>File Name:</strong> {change.file_name}
-              </p>
-                <p>
-                  <strong> Change ID:</strong> {change.commit_sha} 
-
+                    <p>
+                    <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp}  - <strong> Dependencies:</strong> {change.dependencies?.join(", ") || "None"}
                   </p>
-                  </div>
-                  <div>
-                <button style={styles.button} >
-                  Revert this change
-                </button>
+                  <p>
+                    <strong>File Name:</strong> {change.file_name}
+                  </p>
+                  <p>
+                  <strong> Change ID:</strong> {change.commit_sha} 
+                  </p>
+                </div>
+                <div>
+                  <button style={styles.button} >
+                    Revert this change
+                  </button>
                 </div>
               </div>
               <div style={styles.diffContainer}>

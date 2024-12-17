@@ -17,7 +17,7 @@ class FileChange(BaseModel):
 class ChangeTracker:
     def __init__(self, basedir=None, actor_name='general', actor_email='general@example.com'):
         self._basedir = basedir if basedir else "WebBasedSolution_GIT/dk.sdu.bdd.xtext.parent/dk.sdu.bdd.xtext.examples/src/dk/sdu/bdd/xtext/examples/"
-        self.repo_url = "../"
+        self.repo_url = "../" 
         self.actor_name = actor_name
         self.actor_email = actor_email
         self._changes = []
