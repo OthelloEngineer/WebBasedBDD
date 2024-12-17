@@ -88,7 +88,7 @@ export default function FileInspector() {
 
   return (
 <div style={styles.changeContainer}>
-  <h1>File Inspector</h1>
+  <h1>BDD revision service</h1>
   
   <div style={{ marginBottom: '10px' }}>
     <input 
