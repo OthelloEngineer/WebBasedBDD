@@ -7,6 +7,7 @@ from pydantic import BaseModel
 
 class FileChange(BaseModel):
     file_name: str
+    timestamp: str
     commit_sha: str
     before: str
     after: str
@@ -60,8 +61,13 @@ class ChangeTracker:
         for commit in commits:
             print(f"SHA: {commit.hexsha}")
             author = commit.author
+            prev_author = commit.author.name
+            if prev_commit != NULL_TREE:
+                prev_author = prev_commit.author.name
+
             print(f"Author: {author.name} <{author.email}>: current actor: {self.actor_name} <{self.actor_email}>")
             if author.name == self.actor_name:
+                print(f" Found a commit by {self.actor_name} - {author.name}")
                 for change in commit.diff(prev_commit):
                     if change.a_blob is None or change.b_blob is None:
                         continue
@@ -69,7 +75,8 @@ class ChangeTracker:
                     b_diff = change.b_blob.data_stream.read().decode('utf-8')
                     changes.append(
                         FileChange(file_name=change.a_path, commit_sha=commit.hexsha, before=a_diff,
-                                   after=b_diff, user=author.name))
+                                   after=b_diff, user=commit.author.name,
+                                   timestamp=commit.authored_datetime.strftime('%Y-%m-%d %H:%M:%S')))
                     print(f"A_DIFF:\n{a_diff}\nB_DIFF\n{b_diff}")
             prev_commit = commit
         return changes
@@ -89,12 +96,24 @@ class ChangeTracker:
 
                     a_diff = change.a_blob.data_stream.read().decode('utf-8')
                     b_diff = change.b_blob.data_stream.read().decode('utf-8')
+
+                    prev_author = commit.author.name
+                    if prev_commit != NULL_TREE:
+                        prev_author = prev_commit.author.name
+
                     changes.append(
-                        FileChange(file_name=file_path, commit_sha=commit.hexsha, before=a_diff, after=b_diff, user=commit.author.name))
+                        FileChange(file_name=file_path, commit_sha=commit.hexsha, before=a_diff, after=b_diff, user=prev_author,
+                                   timestamp=str(commit.authored_datetime.strftime('%Y-%m-%d %H:%M:%S')))
+                    )
                     print(f"A_DIFF:\n{a_diff}\nB_DIFF\n{b_diff}")
             prev_commit = commit
 
         print(commits)
+
+        print(len(changes))
+        # remove first commit
+        changes = changes[1:]
+        print(len(changes))
 
         return changes
 

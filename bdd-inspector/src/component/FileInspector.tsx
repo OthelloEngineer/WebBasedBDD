@@ -1,45 +1,114 @@
 import React, { useState, useEffect } from 'react';
 
-// Define the FileChange interface
 export interface FileChange {
   file_name: string;
   commit_sha: string;
   before: string;
   after: string;
   user: string;
+  timestamp: string;
 }
 
 export default function FileInspector() {
   const [changes, setChanges] = useState<FileChange[]>([]);
   const [error, setError] = useState<string | null>(null);
-
+  const [currentFile, setCurrentFile] = useState<string>('');
+  const [currentFileInput, setCurrentFileInput] = useState<string>('');
+  const [currentUserInput, setCurrentUserInput] = useState<string>('');
+  const [currentUser, setCurrentUser] = useState<string>("general");
   useEffect(() => {
-    fetch('http://localhost:8000/get_changes/sample.bdd')
+    getChanges();
+  }, [currentFile]);
+
+  function getChanges() {
+    fetch('http://localhost:8000/get_changes/' + currentFile)
       .then(response => {
+        console.log("specfici file req:", currentFile)
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json() as Promise<FileChange[]>;
       })
       .then(data => {
+        console.log('Changes:', data);
         setChanges(data);
       })
       .catch(err => {
         setError(err.message);
+        setChanges([]);
         console.error('Error fetching changes:', err);
       });
-  }, []);
+  }
+
+    useEffect(() => {
+    fetch('http://localhost:8000/get_actor')
+        .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+        })
+        .then(data => {
+        console.log('Current user:', data.actor_name);
+        setCurrentUser(data.actor_name);
+        getChanges();
+        })
+        .catch(error => {
+        console.error('Error fetching current user:', error);
+        });
+    }, []);
+
+    function setNewUser(actorName: string) {
+    const actorEmail = 'random@example.com';
+
+    const url = `http://localhost:8000/set_actor?actor_name=${encodeURIComponent(actorName)}&actor_email=${encodeURIComponent(actorEmail)}`;
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+    })
+        .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+        })
+        .then(data => {
+        console.log('User set successfully:', data);
+        setCurrentUser(actorName);
+        return data.actor_name;
+        })
+        .catch(error => {
+        console.error('Error setting current user:', error);
+        return 'General';
+        });
+    }
 
   return (
     <div style={{ padding: '20px' }}>
       <h1>File Inspector</h1>
+      <input type="text" placeholder={currentFileInput} onChange={(e) =>  setCurrentFileInput(e.target.value)} />
+        <button onClick={() => 
+        {
+            setCurrentFile(currentFileInput)
+            console.log("currentFileInput:", currentFileInput)
+        }
+            }>Inspect</button>
+    <input type="text" placeholder={currentUserInput} onChange={(e) =>  setCurrentUserInput(e.target.value)} />
+    <button onClick={() =>
+        {
+            setNewUser(currentUserInput)
+            console.log("currentUserInput:", currentUserInput)
+        }}>Change User</button>
       <p>
-        Inspecting the file: <strong>sample.bdd</strong>
+            {currentFile === '' ? 'inspected changes in BDDs in the last 10 days made by user: ' + currentUser: "inspecting BDD: " + currentFile}
       </p>
 
       {error && <p style={{ color: 'red' }}>Error: {error}</p>}
 
-      {!error && changes.length === 0 && <p>Loading revision history...</p>}
+      {!error && changes.length === 0 && <p>No changes or Loading revision history...</p>}
 
       {!error && changes.length > 0 && (
         <div>
@@ -47,7 +116,7 @@ export default function FileInspector() {
             <div key={index} style={styles.changeContainer}>
               <h2>Commit: {change.commit_sha}</h2>
               <p>
-                <strong>User:</strong> {change.user}
+                <strong>User:</strong> {change.user} -  <strong>Time: </strong> {change.timestamp} 
               </p>
               <p>
                 <strong>File Name:</strong> {change.file_name}
@@ -69,6 +138,7 @@ export default function FileInspector() {
     </div>
   );
 }
+      
 
 const styles: { [key: string]: React.CSSProperties } = {
   changeContainer: {
@@ -92,6 +162,9 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#f7f7f7',
     padding: '10px',
     borderRadius: '4px',
-    overflowX: 'auto', // Correctly typed
+    overflowX: 'auto', 
+    textAlign: 'left',
+    alignItems: 'left',
+    justifyContent: 'left',
   },
 };
