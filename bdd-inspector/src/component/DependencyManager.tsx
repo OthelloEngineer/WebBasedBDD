@@ -13,6 +13,7 @@ export default function DependencyManager() {
   const [newScenario, setNewScenario] = useState({ title: '', content: '', dependencies: [] });
   const [currentScenarioId, setCurrentScenarioId] = useState<number | null>(null);
   const [dependencyId, setDependencyId] = useState<number | null>(null);
+  const [warning, setWarning] = useState<string | null>(null); // For warnings
 
   // Dummy data for scenarios
   const dummyScenarios: Scenario[] = [
@@ -21,7 +22,6 @@ export default function DependencyManager() {
     { id: 3, title: 'Stacking Boxes', content: 'Given the position of the robot "Loader" is "stationA" \n When the robot "Loader" moves to position "stationC" \n Then the position of the robot "Loader" is "stationC"', dependencies: [] },
     { id: 4, title: 'Stacking Boxes2', content: 'Given the position of the robot "Loader2" is "stationC" \n When the robot "Loader2" moves to position "stationA" \n Then the position of the robot "Loader2" is "stationA"', dependencies: [3] }, // Scenario 2 depends on Scenario 1
   ];
-
 
   useEffect(() => {
     // Use dummy data initially, but simulate fetching data from an API
@@ -51,25 +51,33 @@ export default function DependencyManager() {
 
   // Add a new scenario
   function addScenario() {
-    fetch('http://localhost:8000/add_scenario', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newScenario),
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
+    // Check if the title already exists
+    const duplicate = scenarios.some(scenario => scenario.title === newScenario.title);
+
+    if (duplicate) {
+      setWarning(`The title "${newScenario.title}" already exists! Please use a unique title.`);
+    } else {
+      setWarning(null); // Clear warnings if no conflict
+      fetch('http://localhost:8000/add_scenario', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newScenario),
       })
-      .then(() => {
-        setNewScenario({ title: '', content: '', dependencies: [] });
-        fetchScenarios(); // Refresh scenarios
-      })
-      .catch(err => {
-        setError(err.message);
-        console.error('Error adding scenario:', err);
-      });
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(() => {
+          setNewScenario({ title: '', content: '', dependencies: [] });
+          fetchScenarios(); // Refresh scenarios
+        })
+        .catch(err => {
+          setError(err.message);
+          console.error('Error adding scenario:', err);
+        });
+    }
   }
 
   // Add a dependency between scenarios
@@ -114,17 +122,20 @@ export default function DependencyManager() {
           placeholder="Scenario Title"
           value={newScenario.title}
           onChange={e => setNewScenario({ ...newScenario, title: e.target.value })}
-          style={{    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
-            }}
+          style={{
+            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+          }}
         />
         <textarea
           placeholder="Scenario Content"
           value={newScenario.content}
           onChange={e => setNewScenario({ ...newScenario, content: e.target.value })}
-                    style={{    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
-                    }}
+          style={{
+            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+          }}
         />
         <button style={styles.button} onClick={addScenario}>Add Scenario</button>
+        {warning && <div style={{ color: 'red', marginTop: '10px' }}>{warning}</div>}
       </div>
 
       {/* Select Scenario to Add Dependency */}
@@ -148,11 +159,9 @@ export default function DependencyManager() {
       </div>
 
       {!error && scenarios.length > 0 && (
-        <div style={
-          {
-                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.9)', // Add a subtle drop shadow
-          }
-        }>
+        <div style={{
+          boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.9)',
+        }}>
           {scenarios.map(scenario => (
             <div key={scenario.id} style={styles.scenarioContainer}>
               <h2>{scenario.title}</h2>
@@ -161,8 +170,7 @@ export default function DependencyManager() {
             </div>
           ))}
         </div>
-        )}
-
+      )}
     </div>
   );
 }
@@ -173,9 +181,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '15px',
     marginBottom: '20px',
     borderRadius: '5px',
-    gap: '10px',
   },
-    button: {
+  button: {
     backgroundColor: '#32405C',
     border: 'none',
     color: '#fff',
@@ -185,6 +192,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '16px',
     fontWeight: 'bold',
     transition: 'background-color 0.3s ease, transform 0.3s ease',
-        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)', // Add a subtle drop shadow
-    },
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+  },
 };
